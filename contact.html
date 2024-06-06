@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>יצירת קשר</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/contact-style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <section id="start-section">
+        <section class="features">
+            <div class="feature-box">
+                <img src="https://www.svgrepo.com/show/161139/black-folder-interface-symbol.svg" alt="תקיית עבודה"
+                    style="width: 50px;">
+                <h2>ניהול פרויקטים</h2>
+                <p>ארגון כל מסמכי הפרויקט במקום אחד.</p>
+            </div>
+            <div class="feature-box">
+                <img src="https://www.svgrepo.com/show/435698/magic-wand.svg" alt="מקל קסמים" style="width: 50px;">
+                <h2>פתרונות יצירתיים</h2>
+                <p>מתן פתרונות חדשניים ומקוריים לבעיות טכנולוגיות מורכבות.</p>
+            </div>
+            <div class="feature-box">
+                <img src="https://www.svgrepo.com/show/352185/id-card.svg" alt="כרטיס תעודת זהות" style="width: 50px;">
+                <h2>שירות לקוחות</h2>
+                <p>מתן שירות לקוחות אישי ומקצועי.</p>
+            </div>
+            <div class="feature-box">
+                <img src="https://www.svgrepo.com/show/522167/location.svg" alt="מיקום" style="width: 50px;">
+                <h2>מיקום</h2>
+                <p>אלומות, ישראל</p>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact-form">
+                <h2>צרו איתי קשר</h2>
+                <form>
+                    <input type="text" placeholder="שם מלא">
+                    <input type="email" placeholder="אימייל">
+                    <input type="text" placeholder="נושא ההודעה">
+                    <textarea placeholder="הודעה"></textarea>
+                    <button type="submit" id="contact-button">שליחה</button>
+                </form>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6714.3327864593!2d35.54632055!3d32.70820595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c40365b0cd6eb%3A0x2eb5f0ba5d6e56ef!2z15DXnNeV157Xldeq!5e0!3m2!1siw!2sil!4v1717589254849!5m2!1siw!2sil"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </section>
+    <div class="content-media">
+        <a href="https://www.facebook.com/Yarin.GolAnn/"><img
+                src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-clipart-flat-facebook-logo-png-icon-circle-22.png"
+                alt="Facebook"></a>
+        <a href="https://www.instagram.com/golan__yarin/"><img
+                src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png"
+                alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/yarin-golan-61a1a1291/"><img
+                src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="LinkedIn"></a>
+        <a href="https://wa.me/972506726333"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG3Fic2dzO1g3sR6F3JsF1OXGJ9at0ot9xvg&s"
+                alt="Phone"></a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-bg"></div>
+            <div class="footer-content">
+                <h4>צור קשר</h4>
+                <p>השאר את הפרטים שלך ואחזור אליך בהקדם</p>
+                <form action="send_form.php" method="post">
+                    <input type="text" name="name" placeholder="שם מלא" required>
+                    <input type="email" name="email" placeholder="אימייל" required>
+                    <textarea name="message" placeholder="הודעה" required></textarea>
+                    <button type="submit">שלח/י »</button>
+                </form>
+            </div>
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <img src="./img/icon/Icon material-location-on.svg" alt="My Location">
+                    <a href="https://maps.app.goo.gl/SJcpCBu9EDLMo6MV6" target="_blank">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span> אלומות, ישראל </span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <img src="./img/icon/Icon simple-email.svg" alt="my mail">
+                    <a href="mailto:theyrng@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                        <span>theyrng@gmail.com</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <img src="./img/icon/Icon simple-whatsapp.svg" alt="My WhatsApp">
+                    <a href="https://wa.me/972506726333" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>050-672-6333</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section class="allrightsreserved">
+            <div>
+                <p>All rights reserved © Yarin Golan </p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

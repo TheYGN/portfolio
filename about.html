@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אודות האתר</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
+    <link rel="stylesheet" href="./CSS/about-style.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <section class="about-continer">
+        <section class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <h1>אודות האתר שלנו</h1>
+                    <p>היי! אני ירין, וברוכים הבאים לאתר שלי! אני כאן כדי לעזור לכם ליצור נוכחות דיגיטלית מרשימה.
+                        אני מתמחה בפיתוח אתרים,
+                        אפליקציות מובייל, ועיצובי UI/UX שמשתמשים יאהבו. עם תשוקה אמיתית לעולם הדיגיטלי ושיתוף פעולה הדוק
+                        עם הלקוחות שלי, נשמח
+                        לעזור לכם להגיע להצלחה דיגיטלית.</p>
+                    <a href="contact.html" class="btn">יצירת קשר</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://png.pngtree.com/background/20240112/original/pngtree-d-rendered-graphic-design-of-a-desktop-computer-in-black-and-picture-image_7229621.jpg"
+                        alt="תמונה אודות">
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-bg"></div>
+            <div class="footer-content">
+                <h4>צור קשר</h4>
+                <p>השאר את הפרטים שלך ואחזור אליך בהקדם</p>
+                <form action="send_form.php" method="post">
+                    <input type="text" name="name" placeholder="שם מלא" required>
+                    <input type="email" name="email" placeholder="אימייל" required>
+                    <textarea name="message" placeholder="הודעה" required></textarea>
+                    <button type="submit">שלח/י »</button>
+                </form>
+            </div>
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <img src="./img/icon/Icon material-location-on.svg" alt="מיקום">
+                    <a href="https://maps.app.goo.gl/SJcpCBu9EDLMo6MV6" target="_blank">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span> אלומות, ישראל </span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <img src="./img/icon/Icon simple-email.svg" alt="אימייל">
+                    <a href="mailto:theyrng@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                        <span>theyrng@gmail.com</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <img src="./img/icon/Icon simple-whatsapp.svg" alt="וואטצאפ">
+                    <a href="https://wa.me/972506726333" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>050-672-6333</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section class="allrightsreserved">
+            <div>
+                <p>All rights reserved © Yarin Golan </p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

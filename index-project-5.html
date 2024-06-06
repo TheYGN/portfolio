@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here & Now</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./project-5/style.css">
+</head>
+
+<body>
+
+    <div id="header"></div>
+    <main>
+
+        <section class="mylanguages">
+            <div class="technologies">
+                <div class="technology">
+                    <img src="./img/icon/html.png" alt="HTML">
+                    <div class="overlay">HTML</div>
+                </div>
+                <div class="technology">
+                    <img src="./img/icon/css.png" alt="CSS">
+                    <div class="overlay">CSS</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="landing-page">
+            <div id="landing-container">
+                <h1 class="title">Here & Now</h1>
+                <p class="subtitle">רצינו להזמין אתכם להנות משלל מתנות</p>
+                <p class="description">
+                    כל מה שאתם צריכים לעשות זה להיכנס לרשימה ולהשתתף בהגרלה שלנו
+                </p>
+                <div class="form-container">
+                    <input type="text" id="name-pj5" placeholder="שם">
+                    <input type="email" id="email-pj5" placeholder="אימייל">
+                    <button type="button" id="submit-btn">עדכנו אותי</button>
+                </div>
+            </div>
+        </section>
+</body>
+
+</html>

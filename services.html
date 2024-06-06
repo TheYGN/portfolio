@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שירותים לפי תפקיד</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
+    <link rel="stylesheet" href="./CSS/services-style.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <section class="services-section-continer">
+
+        <section class="solutions-by-role">
+            <div class="role">
+                <img src="https://www.svgrepo.com/show/502592/code.svg" alt="Web Development">
+                <h3>פיתוח אתרים</h3>
+                <p>בניית אתרי אינטרנט רספונסיביים ומותאמים אישית עם שימוש בטכנולוגיות כמו HTML, CSS, JavaScript,
+                    ו-React.
+                    יצירת חוויות משתמש ייחודיות ומרתקות.</p>
+            </div>
+            <div class="role">
+                <img src="https://www.svgrepo.com/show/355987/mobile-code.svg" alt="Mobile App Development">
+                <h3>פיתוח אפליקציות מובייל</h3>
+                <p>פיתוח אפליקציות לניידים למערכות הפעלה אנדרואיד ו-iOS באמצעות טכנולוגיות כמו React Native ו-Flutter.
+                    יצירת
+                    אפליקציות נוחות, מהירות וידידותיות למשתמש.</p>
+            </div>
+            <div class="role">
+                <img src="https://www.svgrepo.com/show/430362/ux-line-circle.svg" alt="UI/UX Design">
+                <h3>פיתוח ממשקים למשתמש (UI/UX)</h3>
+                <p>עיצוב ופיתוח ממשקי משתמש עם דגש על חוויית משתמש מיטבית. שימוש בכלים כמו Figma ו-Sketch ליצירת עיצובים
+                    מודרניים ומתקדמים.</p>
+            </div>
+            <div class="role">
+                <img src="https://www.svgrepo.com/show/533146/server.svg" alt="Backend Development">
+                <h3>פיתוח צד שרת (Backend Development)</h3>
+                <p>פיתוח צד שרת עם טכנולוגיות כמו Node.js, Express, ו-MongoDB. יצירת מערכות ניהול נתונים, אימות משתמשים,
+                    והגדרת API לשימוש בפלטפורמות שונות.</p>
+            </div>
+            <div class="role">
+                <img src="https://www.svgrepo.com/show/478722/seo-1.svg" alt="SEO Optimization">
+                <h3>אופטימיזציית אתרים (SEO)</h3>
+                <p>שיפור נראות אתרים במנועי חיפוש (SEO) באמצעות טכניקות מתקדמות ואופטימיזציה לתוכן וקוד. כולל מחקר מילות
+                    מפתח, אופטימיזציית מטא-תגים, ושיפור מהירות האתר.</p>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-bg"></div>
+            <div class="footer-content">
+                <h4>צור קשר</h4>
+                <p>השאר את הפרטים שלך ואחזור אליך בהקדם</p>
+                <form action="send_form.php" method="post">
+                    <input type="text" name="name" placeholder="שם מלא" required>
+                    <input type="email" name="email" placeholder="אימייל" required>
+                    <textarea name="message" placeholder="הודעה" required></textarea>
+                    <button type="submit">שלח/י »</button>
+                </form>
+            </div>
+            <div class="footer-contact">
+                <div class="contact-item">
+                    <img src="./img/icon/Icon material-location-on.svg" alt="My Location">
+                    <a href="https://maps.app.goo.gl/SJcpCBu9EDLMo6MV6" target="_blank">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span> אלומות, ישראל </span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <img src="./img/icon/Icon simple-email.svg" alt="my mail">
+                    <a href="mailto:theyrng@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                        <span>theyrng@gmail.com</span>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <img src="./img/icon/Icon simple-whatsapp.svg" alt="My WhatsApp">
+                    <a href="https://wa.me/972506726333" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>050-672-6333</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section class="allrightsreserved">
+            <div>
+                <p>All rights reserved © Yarin Golan </p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

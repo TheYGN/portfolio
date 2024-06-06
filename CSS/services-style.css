@@ -1,0 +1,53 @@
+.services-section-continer {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.solutions-by-role {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 80px;
+}
+
+.role {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.role img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.role h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.role p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.role:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+    .role {
+        width: 100%;
+    }
+}

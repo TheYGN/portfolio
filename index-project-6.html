@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מובילים אותך קדימה להצלחה</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./project-6/style.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+
+    <section class="mylanguages">
+        <div class="technologies">
+            <div class="technology">
+                <img src="./img/icon/html.png" alt="HTML">
+                <div class="overlay">HTML</div>
+            </div>
+            <div class="technology">
+                <img src="./img/icon/css.png" alt="CSS">
+                <div class="overlay">CSS</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="unique-main">
+        <div id="unique-landing-container">
+            <div class="unique-landing-header"></div>
+            <div class="unique-landing-form-container-r">
+                <div class="unique-landing-form">
+                    <h1>תן לנו להוביל אותך קדימה</h1>
+                    <p>לורם איפסום או בקיצור ליפסום, הוא מלל מקובל לחסר משמעות המשמש למלא מקום בגרפיקה.</p>
+                    <form>
+                        <div class="unique-form-group">
+                            <label for="unique-name">שם מלא</label>
+                            <input type="text" id="unique-name" name="name" required>
+                        </div>
+                        <div class="unique-form-group">
+                            <label for="unique-email">דוא"ל</label>
+                            <input type="email" id="unique-email" name="email" required>
+                        </div>
+                        <button type="submit">שליחה</button>
+                    </form>
+                </div>
+            </div>
+            <div class="unique-landing-footer"></div>
+        </div>
+    </section>
+
+</body>
+
+</html>

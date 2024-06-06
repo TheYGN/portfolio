@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.unique-name {
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+#unique-landing-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.unique-landing-header {
+    width: 100%;
+    height: 50vh;
+    background-image: url('./img/Path\ 15.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.unique-landing-form-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: -15vh; 
+    z-index: 1;
+    flex-direction: row-reverse;
+    padding-top: 55%;
+}
+
+.unique-landing-form-container-r {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 25vh; 
+    z-index: 1;
+    flex-direction: row-reverse;
+    padding-top: 15%;
+}
+
+.unique-landing-form {
+    max-width: 400px;
+    width: 100%;
+    background-color: #333333;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.unique-landing-form h1 {
+    font-family: Heebo;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.unique-landing-form p {
+    font-family: Heebo;
+    font-weight: Regular;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.unique-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.unique-form-group label {
+    margin-bottom: 0.5em;
+    color: #ffffff;
+    font-family: Heebo;
+    font-weight: Regular;
+}
+
+.unique-form-group input {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ff0078;
+    background: #444444;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff0078;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Heebo;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ff0055;
+}
+
+.unique-landing-footer {
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+}
+
+header {
+    position: relative;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .menu__box {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        width: 200px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu__box a {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .close__btn {
+        text-align: right;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .unique-landing-form-container-r{
+    margin-top: 15vh;   
+}
+
+    .unique-landing-form-container {
+    padding-top: 120vh;
+}
+
+    .unique-landing-form h1 {
+        font-size: 1.5em;
+    }
+
+    .unique-landing-form p {
+        font-size: 0.9em;
+    }
+
+    .unique-form-group input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
