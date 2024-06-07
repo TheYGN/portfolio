@@ -758,12 +758,8 @@ form button:hover {
         height: 80px;
         margin: 10px;
     }
-
-        .technology img {
-        width: 50px;
-    }
     .mylanguages .technologies .technology  img {
-        width: 75px;
+        width: 45px;
 
         .overlay {
         font-size: 10px;
