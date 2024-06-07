@@ -708,6 +708,12 @@ form button:hover {
 }
 
 @media (max-width: 768px) {
+        #back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 40px;
+    }
         .menu {
             display: none;
         }
