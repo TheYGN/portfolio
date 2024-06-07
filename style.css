@@ -517,7 +517,7 @@ form button:hover {
 }
 
 .contact-item span {
-    font-size: 12px;
+    font-size: 9px;
 }
 
 .footer-contact .contact-item img {
@@ -702,7 +702,6 @@ form button:hover {
     transition: background-color 0.3s; 
     z-index: 9;
 }
-
 
 #back-to-top:hover {
     background-color: #555; 
